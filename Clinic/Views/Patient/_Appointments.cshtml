@@ -1,0 +1,34 @@
+﻿<div>
+<div style="float:left; margin-left:5px;">Appointment Date: <input type="text" id="appointmentdate" style="min-width:150px;"></div>
+<div style="float:left; margin-left:5px;">Doctor: <select id="doctor" style="min-width:150px;"></select></div>
+<div style="float:left; margin-left:5px;">Clinic: <select id="clinic" style="min-width:150px;"></select></div>
+</div>
+<br /><br /><br />
+
+<div id="appointments"></div>
+
+<div id="detailsDialogAppointment">
+    <form id="detailsFormAppointment">
+        <div class="details-form-field">
+            <label for="Clinic">Clinic:</label>
+            <input id="Appointment_Clinic" name="Clinic" type="text" />
+            <input id="Appointment_ClinicId" name="ClinicId" type="hidden" />
+        </div>
+        <div class="details-form-field">
+            <label for="Doctor">Doctor:</label>
+            <input id="Appointment_Doctor" name="Doctor" type="text" />
+            <input id="Appointment_DoctorId" name="DoctorId" type="hidden" />
+        </div>
+        <div class="details-form-field">
+            <label for="Date">Date:</label>
+            <input id="Appointment_Date" name="Date" type="text" />
+        </div>
+        <div class="details-form-field">
+            <label for="Time">Time:</label>
+            <input id="Appointment_Time" name="Time" type="text" />
+        </div>
+        <div class="details-form-field">
+            <button type="submit" id="Appointment_Save">Save</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+﻿@using System.Web.Optimization
+
+<br />
+<div role="tabpanel">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#clinicsTab" id="clinicsLink" aria-controls="clinicsTab" role="tab" data-toggle="tab">Clinics</a></li>
+        <li role="presentation"><a href="#doctorsTab" id="doctorsLink" aria-controls="doctorsTab" role="tab" data-toggle="tab">Doctors</a></li>
+        <li role="presentation"><a href="#doctorsclinicsTab" id="doctorsclinicsLink" aria-controls="doctorsclinicsTab" role="tab" data-toggle="tab">Doctors-Clinics</a></li>
+        <li role="presentation"><a href="#patientsTab" id="patientsLink" aria-controls="patientsTab" role="tab" data-toggle="tab">Patients</a></li>
+        <li role="presentation"><a href="#appointmentsTab" id="appointmentsLink" aria-controls="appointmentsTab" role="tab" data-toggle="tab">Appointments</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="clinicsTab">@Html.Partial("_Clinics")</div>
+        <div role="tabpanel" class="tab-pane fade" id="doctorsTab"><p>@Html.Partial("_Doctors")</p></div>
+        <div role="tabpanel" class="tab-pane fade" id="doctorsclinicsTab"><p>@Html.Partial("_DoctorsClinics")</p></div>
+        <div role="tabpanel" class="tab-pane fade" id="patientsTab"><p>@Html.Partial("_Patients")</p></div>
+        <div role="tabpanel" class="tab-pane fade" id="appointmentsTab"><p>@Html.Partial("_Appointments")</p></div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jsgrid")
+    @Styles.Render("~/Content/css/jsgrid")
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_adminpanel/adminpanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_adminpanel/adminpanel.clinics.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_adminpanel/adminpanel.doctors.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_adminpanel/adminpanel.doctorsclinics.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_adminpanel/adminpanel.patients.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_adminpanel/adminpanel.appointments.js")"></script>
+}

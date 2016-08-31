@@ -1,0 +1,12 @@
+﻿.ui-tabs-nav li.ui-tabs-close-button {
+   float: right;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+   border: 0;
+    margin: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 0.5em 0em 0.5em 0.4em;
+}

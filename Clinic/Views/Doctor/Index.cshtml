@@ -1,0 +1,26 @@
+﻿@using System.Web.Optimization
+
+<br />
+<div role="tabpanel">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#appointmentsTab" id="appointmentsLink" aria-controls="appointmentsTab" role="tab" data-toggle="tab">Appointments</a></li>
+        <li role="presentation"><a href="#schedulesTab" id="schedulesLink" aria-controls="schedulesTab" role="tab" data-toggle="tab">Schedule</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="appointmentsTab"><p>@Html.Partial("_Appointments")</p></div>
+        <div role="tabpanel" class="tab-pane fade" id="schedulesTab"><p>@Html.Partial("_Schedules")</p></div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jsgrid")
+    @Styles.Render("~/Content/css/jsgrid")
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_doctorpanel/doctorpanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_doctorpanel/doctorpanel.appointments.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/_doctorpanel/doctorpanel.schedules.js")"></script>
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/doctorpanel.schedules.css")" />
+}

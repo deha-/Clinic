@@ -1,0 +1,46 @@
+﻿<div id="schedules"></div>
+
+<div id="schedules-dialog" class="ui-helper-hidden tabdialog">
+  <div id="schedules-tab">
+    <ul>
+      <li><a href="#add-schedule">Add Schedule</a></li>
+      <li><a href="#remove-schedule">Remove Schedule</a></li>
+      <li class="ui-tabs-close-button"><span class="ui-button-icon-primary ui-icon ui-icon-close"></span></li>
+    </ul>
+    <div id="add-schedule">
+      <form id="addFormSchedule">
+            <div class="details-form-field">
+                <label for="Clinic">Clinic:</label>
+                <select id="Add_Schedule_Clinic" name="Clinic"></select>
+            </div>
+            <div class="details-form-field">
+                <label for="Day">Day:</label>
+                <select id="Add_Schedule_Day" name="Day"></select>
+            </div>
+            <div class="details-form-field">
+                <label for="From">From:</label>
+                <input id="Add_Schedule_From" name="From" type="text" />
+            </div>
+           <div class="details-form-field">
+                <label for="To">To:</label>
+                <input id="Add_Schedule_To" name="To" type="text" />
+            </div>
+            <div class="details-form-field">
+                <button type="button" id="Add_Schedule">Save</button>
+            </div>
+        </form>
+    </div>
+    <div id="remove-schedule">
+        <form id="removeFormSchedule">
+            <p id="Remove_Schedule_Clinic"></p>
+            <div class="details-form-field">
+                <label for="Time">Time:</label>
+                <select id="Remove_Schedule_Time" name="Time"></select>
+            </div>
+            <div class="details-form-field">
+                <button type="button" id="Remove_Schedule">Remove</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
